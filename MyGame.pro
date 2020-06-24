@@ -62,6 +62,7 @@ macx {
 DISTFILES += \
     GameScene.qml \
     qml/Ground.qml \
+    qml/Ground1.qml \
     qml/Level.qml \
     qml/LevelBase.qml \
     qml/Sensor.qml \

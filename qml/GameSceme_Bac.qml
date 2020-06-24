@@ -51,15 +51,15 @@ Item {
         source: "../assets/img/TempleAssets.json"
         frameNames: ["BackGround0000"]
     }
-        TexturePackerAnimatedSprite{
-        id:bac6
-        width: 100
-        height: 100       
-        anchors.bottom: parent.bottom
-        anchors.left: bac5.right
-        source: "../assets/img/TempleAssets.json"
-        frameNames: ["BackGround0000"]
-    }
+//        TexturePackerAnimatedSprite{
+//        id:bac6
+//        width: 100
+//        height: 100
+//        anchors.bottom: parent.bottom
+//        anchors.left: bac5.right
+//        source: "../assets/img/TempleAssets.json"
+//        frameNames: ["BackGround0000"]
+//    }
         TexturePackerAnimatedSprite{
         id:bac7
         width: 100
@@ -104,15 +104,15 @@ Item {
         source: "../assets/img/TempleAssets.json"
         frameNames: ["BackGround0000"]
     }
-        TexturePackerAnimatedSprite{
-        id:bac12
-        width: 100
-        height: 100       
-        anchors.left: bac11.right
-        anchors.bottom: bac6.top
-        source: "../assets/img/TempleAssets.json"
-        frameNames: ["BackGround0000"]
-    }
+//        TexturePackerAnimatedSprite{
+//        id:bac12
+//        width: 100
+//        height: 100
+//        anchors.left: bac11.right
+//        anchors.bottom: bac6.top
+//        source: "../assets/img/TempleAssets.json"
+//        frameNames: ["BackGround0000"]
+//    }
             TexturePackerAnimatedSprite{
         id:bac13
         width: 100
@@ -158,15 +158,15 @@ Item {
         source: "../assets/img/TempleAssets.json"
         frameNames: ["BackGround0000"]
     }
-        TexturePackerAnimatedSprite{
-        id:bac18
-        width: 100
-        height: 100       
-        anchors.left: bac17.right
-        anchors.bottom: bac12.top
-        source: "../assets/img/TempleAssets.json"
-        frameNames: ["BackGround0000"]
-    }
+//        TexturePackerAnimatedSprite{
+//        id:bac18
+//        width: 100
+//        height: 100
+//        anchors.left: bac17.right
+//        anchors.bottom: bac12.top
+//        source: "../assets/img/TempleAssets.json"
+//        frameNames: ["BackGround0000"]
+//    }
             TexturePackerAnimatedSprite{
         id:bac19
         width: 100
@@ -212,13 +212,13 @@ Item {
         source: "../assets/img/TempleAssets.json"
         frameNames: ["BackGround0000"]
     }
-        TexturePackerAnimatedSprite{
-        id:bac24
-        width: 100
-        height: 100       
-        anchors.left: bac23.right
-        anchors.bottom: bac18.top
-        source: "../assets/img/TempleAssets.json"
-        frameNames: ["BackGround0000"]
-    }
+//        TexturePackerAnimatedSprite{
+//        id:bac24
+//        width: 100
+//        height: 100
+//        anchors.left: bac23.right
+//        anchors.bottom: bac18.top
+//        source: "../assets/img/TempleAssets.json"
+//        frameNames: ["BackGround0000"]
+//    }
 }

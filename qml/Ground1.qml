@@ -2,34 +2,32 @@ import QtQuick 2.0
 import Felgo 3.0
 
 TieldEntityBase {
-    id:ground
+    id:ground1
     entityType:"ground"
     size:2
-    width: 100
-    height: 12
+    width: 12
+    height: 100
     TexturePackerAnimatedSprite{
        id:tile
-       width: 100
-        height: 12
+       width: 12
+        height: 100
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         source: "../assets/img/TempleAssets.json"
-        frameNames: ["ForeGround0000"]
+        frameNames: ["ForeGround0001"]
     }
 
     BoxCollider {
       anchors.fill: parent
-      restitution: 0
       bodyType: Body.Static
+      restitution: 0
 //      fixture.onBeginContact: {
 //        var otherEntity = other.getBody().target
 //        if(otherEntity.entityType === "player") player.contacts++
-//        console.debug("111")
 //      }
 //      fixture.onEndContact: {
 //        var otherEntity = other.getBody().target
 //        if(otherEntity.entityType === "player") player.contacts--
-//        console.debug("222")
 //      }
     }
 }

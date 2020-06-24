@@ -7,11 +7,15 @@ import Felgo 3.0
 
 
 EntityBase {
-    id: fire_player
+    id: player
     entityType: "player"
+    property int contacts: 0
+
+    signal contact
 //    width: 60
 //    height: 15
     property  alias f_collider:fire_collider
+
 
     function upmoveFire(){
         idle_fire.opacity = 0
@@ -19,6 +23,24 @@ EntityBase {
         falling_fire.opacity = 0
         rising_fire.opacity = 1
         fire_collider.linearVelocity.y = -300
+    }function rightjumpingmoveFire(){
+        idle_fire.opacity = 0
+        jumping_fire.opacity = 1
+        falling_fire.opacity = 0
+        rising_fire.opacity = 0
+        jumping_fire_head.mirrorX = false
+        jumping_fire_legs.mirrorX = false
+        fire_collider.linearVelocity.y = -300
+      //  fire_collider.linearVelocity.x = 100
+    }function leftjumpingmoveFire(){
+        idle_fire.opacity = 0
+        jumping_fire.opacity = 1
+        falling_fire.opacity = 0
+        rising_fire.opacity = 0
+        jumping_fire_head.mirrorX = true
+        jumping_fire_legs.mirrorX = true
+        fire_collider.linearVelocity.y = -300
+      //  fire_collider.linearVelocity.x = -100
     }
 
     function downmoveFire(){
@@ -61,11 +83,15 @@ EntityBase {
     Image {
         id: idle_fire
         opacity: 1
+//        width: 20
+//        height: 40
 
 
         TexturePackerAnimatedSprite{
                         width:60
             height:75
+//            anchors.horizontalCenter: parent.horizontalCenter
+//            anchors.verticalCenter: parent.verticalCenter
             id: idle_fire_head
             anchors.bottomMargin: idle_fire_legs.top
             source: "../assets/img/CharAssets.json"
@@ -77,6 +103,7 @@ EntityBase {
                         width:60
             height:80
             id: idle_fire_legs
+//            anchors.top: idle_fire_head.bottom
             anchors.horizontalCenter: idle_fire_head.horizontalCenter
             source: "../assets/img/CharAssets.json"
             frameNames: ["fire_legs_idle0000"]
@@ -185,23 +212,30 @@ EntityBase {
       BoxCollider {
     id: fire_collider
     height: 20
+    restitution: 0
     width: 30
     y:38
     x:15
     friction: 0
+//    anchors.fill: idle_fire
 //    anchors.top:  idle_fire_legs.bottom-20
   //  anchors.horizontalCenter: idle_fire_head.horizontalCenter
     bodyType: Body.Dynamic
 
     fixture.onBeginContact: {
-      var otherEntity = other.getBody().target
-      if(otherEntity.entityType === "player") {
-        console.debug("contact platform begin")
+//        idleFire()
+    }
+
+//      var otherEntity = other.getBody().target
+//      if(otherEntity.entityType === "player") {
+//        console.debug("contact platform begin")
 
         // increase the number of active contacts the player has
-        player.contacts++
-      }
-    }
+//        player.contacts++
+//          contact()
+
+//      }
+//    }
 
 }
 

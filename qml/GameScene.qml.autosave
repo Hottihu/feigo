@@ -34,7 +34,7 @@ Scene {
         anchors.bottom:parent.bottom
         anchors.left:parent.left
         MouseArea{
-            pressAndHold: 0.01
+            
 
             anchors.fill:parent
             onPressed:f.leftmoveFire()

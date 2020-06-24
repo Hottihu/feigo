@@ -383,6 +383,13 @@
 	"trimmed": false,
         "spriteSourceSize": {"x":0,"y":0,"w":256,"h":32},
         "sourceSize": {"w":256,"h":32}
+},"ForeGround0001":{
+"filename": "ForeGround0000",
+"frame": {"x":520,"y":520,"w":32,"h":256},
+"rotated": false,
+"trimmed": false,
+"spriteSourceSize": {"x":0,"y":0,"w":32,"h":256},
+"sourceSize": {"w":32,"h":256}
 }
 ,"":{
 	"filename": "Icon0000",
